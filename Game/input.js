@@ -300,6 +300,7 @@ export function highlightWordRanges(range){
 
 export function resetTextArea(){
     textArea.value = "";
+    codeTextArea.value = "";
     moves = []
     angles =[];
     ranges = [];

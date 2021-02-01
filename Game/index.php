@@ -39,7 +39,6 @@
 <script src="display.js" defer type="module"></script>
 <script src="character.js" defer type="module"></script>
 
-
 <div id="blackTransparentScreen" class="blackTransparentScreen">
     <div id="modalFailed">
         <div id="modalFailedTextBox">
