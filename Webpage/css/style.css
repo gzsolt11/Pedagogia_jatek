@@ -1,0 +1,154 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-elemets {
+  display: inline;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:active{
+  color: #8BC34A;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #60bdf0;
+  font-size: 150%;
+  text-decoration: none;
+}
+
+ h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #061d45;
+  line-height: 25px;
+}
+
+h1 {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+p {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singup-form {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 300px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .signup-form-form {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}
+
+.singupblock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+}
+
+ .input:focus + .signup-form .signup-form-form {
+   width: 100%;
+}
+ .label-active {
+   top: -3em;
+}
+
+button {
+  display: block;
+  margin-top: auto;
+  margin: auto;
+  padding: 12px 24px;
+  background: #ffffff;
+  font-weight: bold;
+  color: rgb(120,120,120);
+  border: none;  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+button:hover {
+  background: #60bdf0;
+  color: #ffffff;
+}
