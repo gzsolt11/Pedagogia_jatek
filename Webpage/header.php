@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="bodywebpage">
 
     <nav>
-      <div class="wrapper">
+      <div class="wrapper" id="menu">
         <ul>
-          <li class="header-elemets"><a href="index.php">Home</a></li>
+          <li class="header-elemets"><a class="aweb" href="index.php">Home</a></li>
           <?php
             if (isset($_SESSION["useruid"])) {
-              echo "<li class='header-elemets'><a href='profile.php'>Profile</a></li>";
-              echo "<li class='header-elemets'><a href='includes/logout.inc.php'>Log out</a></li>";
-              echo "<li class='header-elemets'><a href='../Map/index.php'>Map</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='profile.php'>Profile</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='includes/logout.inc.php'>Log out</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='../Map/index.php'>Map</a></li>";
             }
             else {
-              echo "<li class='header-elemets'><a href='signup.php'>Sing up</a></li>";
-              echo "<li class='header-elemets'><a href='login.php'>Log in</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='signup.php'>Sign up</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='login.php'>Log in</a></li>";
             }
           ?>
         </ul>

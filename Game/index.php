@@ -1,4 +1,6 @@
-
+<?php
+  include_once 'header.php'
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +12,6 @@
 </head>
 <body id="body">
 
-<!-- <canvas id="canvas">
-</canvas> -->
 <div class="playScreen" id="playScreen">
 </div>
 

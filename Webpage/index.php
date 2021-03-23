@@ -7,8 +7,12 @@
           echo "<p>Hi there " . $_SESSION["useruid"] . " !</p>";
         }
       ?>
-      <h1>Welcome!</h1>
-      <p>This is a game for kids who want to start learning programing. With this method it is easier to learn and it is more fun.</p>
+      <div class="index">
+        <h1 id="welcome">Welcome!</h1>
+        <div id="welcomeTextBox">
+          <p>This is a game for kids who want to start learning programing. With this method it is easier to learn and it is more fun.</p>
+        </div>
+      </div>
     </selection>
 
 <?php
