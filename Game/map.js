@@ -5,8 +5,6 @@ export class Map{
     constructor(mapCoordinates){
         this.mapCoordinates = mapCoordinates;
 
-       
-
     }
 
     
@@ -17,8 +15,8 @@ export class Map{
         let characterPosition = character.position;
 
         
-        for(let i = 1; i <= 15; ++i){
-            for(let j = 1; j <= 15; ++j){
+        for(let i = 1; i <= 10; ++i){
+            for(let j = 1; j <= 10; ++j){
                 const indexing = document.createElement('p');
                 indexing.innerHTML = i+","+j;
                 indexing.style.gridRowStart = i;
@@ -26,14 +24,12 @@ export class Map{
                 indexing.classList.add('indexing');
                 playScreen.appendChild(indexing);
             }
-        }
-
-        
+        } 
             
         for(let i = 0; i < this.mapCoordinates.length; ++i){
             const mapElement = document.createElement('div');
-            mapElement.style.gridRowStart = this.mapCoordinates[i].y;
-            mapElement.style.gridColumnStart = this.mapCoordinates[i].x;
+            mapElement.style.gridRowStart = this.mapCoordinates[i].x;
+            mapElement.style.gridColumnStart = this.mapCoordinates[i].y;
             mapElement.classList.add('map');
             if(i == this.mapCoordinates.length-1){
                 mapElement.id = "finish";
@@ -41,12 +37,6 @@ export class Map{
             playScreen.appendChild(mapElement);
         }
 
-        
-
-        
-        
-        
-        
     }
 
     isCharacterAtFinish(){
