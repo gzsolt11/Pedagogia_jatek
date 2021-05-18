@@ -17,21 +17,33 @@
 
 
 <div id="inputAndCodeField">
-    <textarea autofocus id="inputField" class="inputField" name="codeInputField" id="" cols="30" rows="10"></textarea>
+    
     <div id="characterInfo" class="characterInfo">
-        <p id="characterPosition" class="characterPosition">1,1</p>
+        <p id="characterPosition" class="characterPosition"></p>
     </div>
+    <textarea autofocus id="inputField" class="inputField" name="codeInputField" id="" cols="30" rows="10"></textarea>
     <textarea id="codeInputField" class="codeInputField" name="codeInputField" id="" cols="30" rows="10"></textarea>
 
     <div class="buttons">
         <button class="button" id="forwardButton">forward</button>
-        <button class="button" id="backwardButton">turn backward</button>
         <button class="button" id="turnleftButton">turn left</button>
         <button class="button" id="turnrightButton">turn right</button>
+        <button class="button" id="backwardButton">turn backward</button>
         <button class="button" id="startButton">Start</button>
     </div>
+    
 </div>
 
+
+<div id="replaceField">
+    <div id="characterInfo2" class="characterInfo2">
+            <p id="characterPosition2" class="characterPosition2"></p>
+    </div>
+    <div id="replaceCodeField"></div>
+    <div class="buttons2">
+        <button class="button" id="startButton2">Start</button>
+    </div>
+</div>
 
 
 
@@ -44,6 +56,9 @@
         <div id="modalFailedTextBox">
             <h3 id="failedTitle">Ooops, you have got a mistake!</h3>
             <p id="failedText" >Try again and correct your mistake!</p>
+            <div id="modalFailedTemp">
+
+            </div>
         </div>
         <button id="tryAgainButton" class="tryAgainButton">Try again</button>
     </div>
@@ -54,6 +69,9 @@
         <div id="modalSuccessTextBox">
             <h3 id="successTitle">You have made this map successfuly</h3>
             <p id="successText" >Try yourself on the next map!</p>
+        </div>
+        <div id="modalSuccessTemp">
+
         </div>
         <button id="tryAgainButton" class="tryAgainButton">Try again</button>
         <button id="nextButton">Next map</button>
