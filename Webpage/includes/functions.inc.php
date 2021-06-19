@@ -1,8 +1,8 @@
 <?php
 
-function emptyInputSignup($name, $username, $email, $pwd, $pwdrepeat){
+function emptyInputSignup($name, $username, $email, $pwd, $pwdrepeat, $parental){
   $result;
-  if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdrepeat)) {
+  if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdrepeat) || $parental == 0) {
     $result = true;
   }
   else{
@@ -66,7 +66,6 @@ function uNameExists($conn, $username, $email){
     $result = false;
     return $result;
   }
-
   mysqli_stmt_close($stmt);
 }
 
@@ -114,6 +113,7 @@ function loginUser($conn, $username, $pwd) {
   }
   else if ($checkPwd === true) {
     session_start();
+    print_r($uNameExists);
     $_SESSION["username"] = $uNameExists["usersUserName"];
     header("location: ../index.php");
     exit();

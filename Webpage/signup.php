@@ -10,31 +10,36 @@
           <input type="text" name="username" placeholder="Username...">
           <input type="password" name="pwd" placeholder="Password...">
           <input type="password" name="pwdrepeat" placeholder="Repeat password...">
-          <button class="submitbutton" type="submit" name="submit">Sign up</button>
+          <div id="labelnek"><label for="parentok">Parental consent</label></div>
+          <input type="hidden" name="parentok" value=0>
+          <input type="checkbox" name="parentok" value=1>
+          <div id="gomb">
+            <button class="submitbutton" type="submit" name="submit">Sign up</button>
+          </div>
         </form>
       </div>
       <?php
         if (isset($_GET["error"])) {
           if ($_GET["error"] == "emptyInput") {
-            echo "<p>Fill in all fields!</p>";
+            echo "<p id=\"error\">Fill in all fields!</p>";
           }
           else if ($_GET["error"] == "invalidUName"){
-            echo "<p>Invalid username!</p>";
+            echo "<p id=\"error\">Invalid username!</p>";
           }
           else if ($_GET["error"] == "invalidEmail"){
-            echo "<p>Invalid email!</p>";
+            echo "<p id=\"error\">Invalid email!</p>";
           }
           else if ($_GET["error"] == "passwordsnotmatch"){
-            echo "<p>Passwords does not match!</p>";
+            echo "<p id=\"error\">Passwords does not match!</p>";
           }
           else if ($_GET["error"] == "usernametaken"){
-            echo "<p>Username already taken!</p>";
+            echo "<p id=\"error\">Username already taken!</p>";
           }
           else if ($_GET["error"] == "stmtfailed"){
-            echo "<p>Something went wrong, try again!</p>";
+            echo "<p id=\"error\">Something went wrong, try again!</p>";
           }
           else if ($_GET["error"] == "none"){
-            echo "<p>You have signed up!</p>";
+            echo "<p>You have signed up! Now you can log in</p>";
           }
         }
       ?>

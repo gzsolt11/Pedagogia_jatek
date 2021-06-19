@@ -6,13 +6,14 @@ if (isset($_POST["submit"])) {
   $username = $_POST["username"];
   $pwd = $_POST["pwd"];
   $pwdrepeat = $_POST["pwdrepeat"];
+  $parental = $_POST["parentok"];
 
-  print_r($_POST);
   require_once 'dbh.inc.php';
   require_once 'functions.inc.php';
 
-  if (emptyInputSignup($name, $username, $email, $pwd, $pwdrepeat) !== false) {
+  if (emptyInputSignup($name, $username, $email, $pwd, $pwdrepeat, $parental) !== false) {
     header("location: ../signup.php?error=emptyInput");
+    echo "<p>" . $_POST["parentok"] . "</p>";
     exit();
   }
   if (invalidUName($username) !== false) {

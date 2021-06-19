@@ -82,7 +82,7 @@ h2 {
   text-align: center;
 }
 
-p {
+p{
   font-family: 'Ubuntu', sans-serif;
   color: #95eb6c;
   line-height: 25px;
@@ -96,11 +96,33 @@ p {
   align-items: center;
 }
 
+label{
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(97, 94, 94);
+  font-weight: 600;
+}
+
+#labelnek{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 22px;
+}
+
+#gomb{
+  position: relative;
+  margin-top: 2em;
+  margin-right: 18%;
+}
+
+#error{
+  color: #952138;
+}
+
 .signup-form {
   position: relative;
   background-color: #FFFFFF;
-  width: 30%;
-  height: 300px;
+  width: 40%;
+  height: 400px;
   margin: 7em auto;
   border-radius: 1.5em;
   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
@@ -110,13 +132,50 @@ p {
   opacity: 0.9;
 }
 
- .signup-form-form {
+.login-form {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 200px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.profile-form{
+  position: relative;
+  background-color: #FFFFFF;
+  width: 40%;
+  margin: 7em auto;
+  padding: 10px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.profile-img{
+  width:80px;
+  height: 80px;
+}
+
+.signup-form-form {
    width: 100%;
    height: 30%;
    display: flex;
    justify-content: center;
    align-items: center;
    border: none;
+}
+
+.profile-content{
+  margin-left: 13em;
 }
 
 .signupblock {
@@ -144,7 +203,7 @@ input {
   border: 2px solid rgba(0, 0, 0, 0.02);
 }
 
- .input:focus + .signup-form .signup-form-form {
+.input:focus + .signup-form .signup-form-form {
    width: 100%;
 }
  .label-active {
@@ -171,9 +230,6 @@ input {
   color: #ffffff;
 }
 
-.profile-form-form{
-  position: absolute;
-  margin-left: 47.5%;
-  font-size: 20px;
-  font-weight: bold;
+#error{
+  color: #952138;
 }

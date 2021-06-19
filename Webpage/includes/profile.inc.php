@@ -1,19 +1,18 @@
 <?php
 
-  if (isset($_POST["submit"])) {
-    $username = $_POST["username"];
-    $name = $_POST["name"];
-    $email = $_POST["email"];
+$username = $_SESSION["username"];
 
-    require_once 'dbh.inc.php';
+$sql = "SELECT * FROM users WHERE usersUserName= ?;";
+require_once 'dbh.inc.php';
+require_once 'functions.inc.php';
+$stmt = mysqli_stmt_init($conn); //statement
+mysqli_stmt_prepare($stmt, $sql);
 
-    $sql="SELECT * FROM useres WHERE usersUserName='$username'";
+mysqli_stmt_bind_param($stmt, "s", $username);
+mysqli_stmt_execute($stmt);
 
-    $result=mysqli_query($conn, $sql);
+$resultData = mysqli_stmt_get_result($stmt);
 
-    $rows=mysqli_num_rows($result);
-
-    if (rows > 0) {
-      $array=mysqli_fetch_assoc($result);
-    }
-  }
+//ha van ilyen akkor true hanem false
+$row = mysqli_fetch_assoc($resultData);
+mysqli_stmt_close($stmt);

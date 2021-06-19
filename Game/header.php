@@ -18,7 +18,7 @@
         <ul>
           <li class="header-elemets"><a href="index.php">Home</a></li>
           <?php
-            if (isset($_SESSION["useruid"])) {
+            if (isset($_SESSION["username"])) {
               echo "<li class='header-elemets'><a href='profile.php'>Profile</a></li>";
               echo "<li class='header-elemets'><a href='includes/logout.inc.php'>Log out</a></li>";
               echo "<li class='header-elemets'><a href='../Map/index.php'>Map</a></li>";
