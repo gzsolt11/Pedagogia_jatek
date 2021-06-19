@@ -104,8 +104,8 @@ export class Character{
     }
 
     drawPositionOnCodePart(x,y){
-        document.getElementById("characterPosition").innerHTML = "Your position on the map: X:"+x+" Y:"+y;
-        document.getElementById("characterPosition2").innerHTML = "Your position on the map: X:"+x+" Y:"+y;
+        document.getElementById("characterPosition").innerHTML = "Your position: X:"+x+" Y:"+y;
+        document.getElementById("characterPosition2").innerHTML = "Your position: X:"+x+" Y:"+y;
     }
     
 }
