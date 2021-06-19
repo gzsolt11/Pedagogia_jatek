@@ -29,7 +29,7 @@
         <button class="button" id="turnleftButton">turn left</button>
         <button class="button" id="turnrightButton">turn right</button>
         <button class="button" id="backwardButton">turn backward</button>
-        <button class="button" id="startButton">Start</button>
+        <button class="button" id="startButton">start</button>
     </div>
     
 </div>
