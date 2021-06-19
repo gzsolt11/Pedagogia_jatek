@@ -18,10 +18,10 @@
         <ul>
           <li class="header-elemets"><a class="aweb" href="index.php">Home</a></li>
           <?php
-            if (isset($_SESSION["useruid"])) {
+            if (isset($_SESSION["username"])) {
               echo "<li class='header-elemets'><a class='aweb' href='profile.php'>Profile</a></li>";
-              echo "<li class='header-elemets'><a class='aweb' href='includes/logout.inc.php'>Log out</a></li>";
               echo "<li class='header-elemets'><a class='aweb' href='../Map/index.php'>Map</a></li>";
+              echo "<li class='header-elemets'><a class='aweb' href='includes/logout.inc.php'>Log out</a></li>";              
             }
             else {
               echo "<li class='header-elemets'><a class='aweb' href='signup.php'>Sign up</a></li>";

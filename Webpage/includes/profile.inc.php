@@ -1,13 +1,13 @@
 <?php
 
   if (isset($_POST["submit"])) {
-    $username = $_POST["uid"];
+    $username = $_POST["username"];
     $name = $_POST["name"];
     $email = $_POST["email"];
 
     require_once 'dbh.inc.php';
 
-    $sql="SELECT * FROM useres WHERE usersName='$username'";
+    $sql="SELECT * FROM useres WHERE usersUserName='$username'";
 
     $result=mysqli_query($conn, $sql);
 

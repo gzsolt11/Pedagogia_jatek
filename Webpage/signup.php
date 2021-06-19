@@ -7,10 +7,10 @@
         <form class="signupblock" action="includes/signup.inc.php" method="post">
           <input type="text" name="name" placeholder="Full name...">
           <input type="text" name="email" placeholder="Email...">
-          <input type="text" name="uid" placeholder="Username...">
+          <input type="text" name="username" placeholder="Username...">
           <input type="password" name="pwd" placeholder="Password...">
           <input type="password" name="pwdrepeat" placeholder="Repeat password...">
-          <button class="submitbutton" type="submit" name="submit">Sign Up</button>
+          <button class="submitbutton" type="submit" name="submit">Sign up</button>
         </form>
       </div>
       <?php
@@ -18,7 +18,7 @@
           if ($_GET["error"] == "emptyInput") {
             echo "<p>Fill in all fields!</p>";
           }
-          else if ($_GET["error"] == "invalidUid"){
+          else if ($_GET["error"] == "invalidUName"){
             echo "<p>Invalid username!</p>";
           }
           else if ($_GET["error"] == "invalidEmail"){
